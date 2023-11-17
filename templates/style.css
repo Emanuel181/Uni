@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@500&family=Mooli&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    background-color:white;
+}
+.ca,header a,.ctaa{
+font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color:black;
+    text-decoration:none;
+    background-color: blue;
+
+}
+
+header{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:30px 10%;
+    background-color: blue;
+
+}
+.logo{
+    cursor: pointer;
+    margin-left:auto;
+    order:3;
+    background-color: blue;
+
+}
+nav{
+    order:1;
+}
+.nav__links{
+    list-style:none;
+    background-color: blue;
+}
+.nav__links li{
+    display:inline-block;
+    padding:0px 20px;
+    background-color: blue;
+
+}
+.nav__links li:nth-child(1){
+    padding:0 20px 0 0;
+}
+.nav__links li a{
+    transition:all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color:#0088a9
+}
+.cta{
+    order:2;
+
+}
+.ctaa{
+    margin-left:20px;
+    padding:9px 25px;
+    background-color:rgba(0,136,169,1) ;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease 0s;
+}
+.ctaa:hover{
+    background-color:rgba(0,136,169,0.8) ;
+}
+.blea:link{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
