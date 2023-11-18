@@ -79,16 +79,14 @@ body,html{
     background-color:#0F2C59;
 }
 .Back_ground{
-    width: 95%;
+    width: 100%;
     align-items: center;
     opacity:75%;
     z-index: inherit;
     border:none;
     border-radius:1%;
-    position:static;
-}
+    position: relative;
 .Start{
-    display: flex;
     border:none;
     border-radius:2%;
     align-items: center;
