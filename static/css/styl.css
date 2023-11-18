@@ -12,7 +12,7 @@ body{
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    height:100mvh;
+    height:100vh;
 }
 .container{
     margin-top: 100px;
