@@ -23,7 +23,7 @@ header{
     border: solid  #DAC0A3;
     border-width:5px;
     height:1px;
-    position: sticky;
+    position: static;
 
 
 }
@@ -32,7 +32,7 @@ header{
     margin-left:auto;
     order:3;
     background-color: #EADBC8;
-    
+
 }
 nav{
     order:1;
@@ -45,7 +45,7 @@ nav{
     display:inline-block;
     padding:0px 20px;
     background-color: #EADBC8;
-    
+
 }
 .nav__links li:nth-child(1){
     padding:0 20px 0 0;
@@ -58,7 +58,7 @@ nav{
 }
 .cta{
     order:2;
-    
+
 }
 .ctaa{
     margin-left:20px;
@@ -76,5 +76,21 @@ h1{
  background-color:   #F8F0E5, #EADBC8,#DAC0A3,#0F2C59;
 }
 body,html{
+    background-color:#0F2C59;
+}
+.Back_ground{
+    width: 95%;
+    align-items: center;
+    opacity:75%;
+    z-index: inherit;
+    border:none;
+    border-radius:1%;
+    position:static;
+}
+.Start{
+    display: flex;
+    border:none;
+    border-radius:2%;
+    align-items: center;
     background-color:#0F2C59;
 }
