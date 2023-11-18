@@ -3,7 +3,8 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    background-color:white;
+    background-color:#0F2C59;
+
 }
 .ca,header a,.ctaa{
 font-family: 'Montserrat', sans-serif;
@@ -78,17 +79,16 @@ h1{
 body,html{
     background-color:#0F2C59;
 }
-.Back_ground{
+.Back_ground {
     width: 100%;
     align-items: center;
-    opacity:75%;
+    opacity: 75%;
     z-index: inherit;
-    border:none;
-    border-radius:1%;
+    border: none;
     position: relative;
+}
 .Start{
     border:none;
-    border-radius:2%;
     align-items: center;
     background-color:#0F2C59;
 }
