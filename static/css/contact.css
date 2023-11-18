@@ -1,59 +1,171 @@
-/* contact.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@500&family=Mooli&display=swap');
+
+body, html {
+    background-color: #DAC0A3; /* Dark blue background */
+    font-family: 'Montserrat', sans-serif;
+    color: #EADBC8; /* Light beige text */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
-    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #0F2C59; /* Light beige background */
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
 }
 
-h1 {
-    color: #333;
+.form-header {
     text-align: center;
-}
-
-p {
-    color: #666;
-    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .contact-form {
-    display: grid;
-    grid-gap: 10px;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
+.contact-form input, .contact-form textarea {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #DAC0A3; /* Darker beige border */
     border-radius: 4px;
-    box-sizing: border-box;
+    background-color: #F8F0E5; /* Off-white background */
+    color: #0F2C59; /* Dark blue text */
 }
 
 .contact-form button {
-    background-color: #0056b3;
-    color: white;
+    background-color: #0F2C59; /* Dark blue background */
+    color: #EADBC8; /* Light beige text */
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #004494;
+    background-color: #DAC0A3; /* Darker beige background */
+}
+
+/* Prevent textarea from being resized */
+.contact-form textarea {
+    resize: none;
+}
+
+/* Icon class */
+.header-graphic {
+    height: 60px; /* Adjust the size as needed */
+    width: 60px; /* Adjust the size as needed */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    animation: pulseAnimation 0.6s ease-out;
+    border-color: #0F2C59;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(15, 44, 89, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(15, 44, 89, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(15, 44, 89, 0);
+    }
+}
+
+.contact-form button:hover {
+    animation: buttonHoverAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes buttonHoverAnimation {
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.form-submission-animation {
+    animation: submissionAnimation 1s ease-in-out forwards;
+}
+
+@keyframes submissionAnimation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(-20px);
+    }
+}
+
+.error-message {
+    display: none;
+    color: red;
+    animation: errorMessageAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes errorMessageAnimation {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.error-message {
+    display: none;
+    color: red;
+    animation: errorMessageAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes errorMessageAnimation {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border: 5px solid #F5F5DC; /* Change the color as needed */
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 5 0 5px #0F2C59; /* Optional: adds a glow effect */
+}
+
+.animate-form {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.form-animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-container {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.container-animated {
+    opacity: 1;
+    transform: translateY(0);
 }

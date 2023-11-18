@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="/static/css/contact.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Address</h1>
-        <p>Mada Center 8th floor, 379 Hudson St,</p>
-        <p>New York, NY 10018 US</p>
-        <p>Lets Talk +1 800 1236879</p>
-        <p>General Support contact@example.com</p>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="TELL US YOUR NAME *" required>
-            <input type="text" name="email" placeholder="ENTER YOUR EMAIL *" required>
-            <input type="text" name="phone" placeholder="ENTER PHONE NUMBER" required>
-            <textarea name="message" rows="4" placeholder="MESSAGE*" required></textarea>
-            <button type="submit">SEND MESSAGE</button>
-        </form>
+    <div class="container container animate-container">
+        <div class="form-header">
+            <h1>Contact Us</h1>
+            <img src="/static/images/gmail.png" alt="Form Header Graphic" class="header-graphic">
+        </div>
+            <form id="contactForm" class="contact-form animate-form">
+                <input type="text" name="name" placeholder="TELL US YOUR NAME *" required>
+                <input type="email" name="email" placeholder="ENTER YOUR EMAIL *" required>
+                <input type="tel" name="phone" placeholder="ENTER PHONE NUMBER">
+                <textarea name="message" rows="4" placeholder="MESSAGE*" required></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
     </div>
+    <script src="/static/js/contactFormAnimation.js"></script>
 </body>
 </html>
