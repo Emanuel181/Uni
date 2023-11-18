@@ -12,13 +12,15 @@
             <h1>Contact Us</h1>
             <img src="/static/images/gmail.png" alt="Form Header Graphic" class="header-graphic">
         </div>
-            <form id="contactForm" class="contact-form animate-form">
-                <input type="text" name="name" placeholder="TELL US YOUR NAME *" required>
-                <input type="email" name="email" placeholder="ENTER YOUR EMAIL *" required>
-                <input type="tel" name="phone" placeholder="ENTER PHONE NUMBER">
-                <textarea name="message" rows="4" placeholder="MESSAGE*" required></textarea>
-                <button type="submit">SEND MESSAGE</button>
-            </form>
+    <div class="container">
+        <form id="contactForm" class="contact-form animate-form" method="post">
+            <input type="text" name="name" placeholder="TELL US YOUR NAME *" required>
+            <input type="email" name="email" placeholder="ENTER YOUR EMAIL *" required>
+            <input type="tel" name="phone" placeholder="ENTER PHONE NUMBER">
+            <textarea name="message" rows="4" placeholder="MESSAGE*" required></textarea>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </div>
     </div>
     <script src="/static/js/contactFormAnimation.js"></script>
 </body>

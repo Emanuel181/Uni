@@ -1,9 +1,7 @@
-*{
+.a{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-body{
     display: flex;
     justify-content:center;
     align-items:center;
@@ -34,7 +32,7 @@ body{
  width:100%;
  height:40px;
  background:linear-gradient(90deg,transparent,#DAC0A3);
- animation:animate1 1s linear infinite;
+ animation:animate1 5s linear infinite;
  animation-delay:0s;
 }
 @keyframes animate1{
@@ -51,7 +49,7 @@ body{
     width:100%;
     height: 40px;
     background:linear-gradient(270deg,transparent,#DAC0A3);
-    animation:animate3 1s linear infinite;
+    animation:animate3 5s linear infinite;
     animation-delay:0s;
 }
 @keyframes animate3 {
@@ -68,7 +66,7 @@ body{
     width:40px;
     height: 100%;
     background:linear-gradient(180deg,transparent,#DAC0A3);
-    animation:animate2 1s linear infinite;
+    animation:animate2 5s linear infinite;
     animation-delay:0s;
 }
 @keyframes animate2{
@@ -85,7 +83,7 @@ body{
     width:40px;
     height: 100%;
     background:linear-gradient(0deg,transparent,#DAC0A3);
-    animation:animate4 1s linear infinite;
+    animation:animate4 5s linear infinite;
     animation-delay:0.5s;
 }
 @keyframes animate4{
