@@ -1,7 +1,9 @@
-.a{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+body{
     display: flex;
     justify-content:center;
     align-items:center;
@@ -16,11 +18,11 @@
     -webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
 }
 .loader:hover{
-    background:#DAC0A3;
-    box-shadow:0 0 5px #DAC0A3,
-               0 0 25px #DAC0A3,
-               0 0 50px #DAC0A3,
-               0 0 200px #DAC0A3;
+    background: #14b773;
+    box-shadow:0 0 5px #14b773,
+               0 0 25px #14b773,
+               0 0 50px #14b773,
+               0 0 200px #14b773;
 }
 .loader span{
     position:absolute;
@@ -31,7 +33,7 @@
  left:-100%;
  width:100%;
  height:40px;
- background:linear-gradient(90deg,transparent,#DAC0A3);
+ background:linear-gradient(90deg,transparent, #14b773);
  animation:animate1 5s linear infinite;
  animation-delay:0s;
 }
@@ -48,7 +50,7 @@
     left:-100%;
     width:100%;
     height: 40px;
-    background:linear-gradient(270deg,transparent,#DAC0A3);
+    background:linear-gradient(270deg,transparent, #14b773);
     animation:animate3 5s linear infinite;
     animation-delay:0s;
 }
@@ -65,7 +67,7 @@
     top:-100%;
     width:40px;
     height: 100%;
-    background:linear-gradient(180deg,transparent,#DAC0A3);
+    background:linear-gradient(180deg,transparent, #14b773);
     animation:animate2 5s linear infinite;
     animation-delay:0s;
 }
@@ -82,7 +84,7 @@
     top:-100%;
     width:40px;
     height: 100%;
-    background:linear-gradient(0deg,transparent,#DAC0A3);
+    background:linear-gradient(0deg,transparent, #14b773);
     animation:animate4 5s linear infinite;
     animation-delay:0.5s;
 }
